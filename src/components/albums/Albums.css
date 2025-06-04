@@ -1,0 +1,66 @@
+/* Conteneur principal pour les albums et les photos */
+#container {
+    display: flex;
+    gap: 20px; /* Espacement entre les albums et les photos */
+  }
+  
+  /* Liste des albums */
+  #albums {
+      display: flex; 
+    /* Les albums occupent environ la moitié de l'espace */
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+  }
+  
+  /* Liens des albums */
+  #albums li {
+    list-style-type: none;
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    border-radius: 8px;
+    text-align: center;
+    transition: background-color 0.2s;
+    margin-right: 50px;
+  }
+  
+  #albums li:hover {
+    background-color: #e0e0e0;
+  }
+  
+  /* Section des photos */
+  #photos {
+    box-sizing: border-box;
+    background-color: #fafafa;
+    border-radius: 8px;
+    overflow-y: auto;
+    max-height: 500px; /* Limite la hauteur des photos */
+  }
+  
+  /* Images des photos */
+  #photos img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  
+  /* Ajout d'un bouton pour recharger plus de photos */
+  #photos button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #photos button:hover {
+    background-color: #0056b3;
+  }
+  
